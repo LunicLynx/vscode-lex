@@ -2,8 +2,11 @@
     "name": "lex",
     "displayName": "Lex",
     "description": "Lex & Flex Syntax Highlighting",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "luniclynx",
+    "repository": {
+        "url": "https://github.com/LunicLynx/vscode-lex.git"
+    },
     "engines": {
         "vscode": "^1.5.0"
     },
@@ -11,16 +14,25 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "lex",
-            "aliases": ["Lex/Flex", "lex"],
-            "extensions": [".l"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "lex",
-            "scopeName": "source.lex",
-            "path": "./syntaxes/lex.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "lex",
+                "aliases": [
+                    "Lex/Flex",
+                    "lex"
+                ],
+                "extensions": [
+                    ".l"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "lex",
+                "scopeName": "source.lex",
+                "path": "./syntaxes/lex.tmLanguage"
+            }
+        ]
     }
 }
